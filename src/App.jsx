@@ -4,6 +4,7 @@ import "./index.css"
 import Main2 from "./Main2"
 import useAddStorage from "./useAddStorage"
 import useLog from "./useLog"
+import LoginForm from "./LoginForm"
 export function counterReducer(state, action) {
   if (action.type == "increment") {
     return { count: state.count + 1 }
@@ -41,45 +42,46 @@ function App() {
   const [state, dispatch] = useReducer(counterReducer, { count: 0 })
 
   return (
-    //   <div id="app">
-    //     {num.value}
-    //     <Main2 />
-    <>
-      <h1>The (Final?) Counter</h1>
-      <p id="actions">
-        <button
-          onClick={() => {
-            dispatch({ type: "increment" })
-          }}
-        >
-          Increment
-        </button>
-        <button
-          onClick={() => {
-            dispatch({ type: "decrement" })
-          }}
-        >
-          Decrement
-        </button>
-        <button
-          onClick={() => {
-            dispatch({ type: "reset" })
-          }}
-        >
-          Reset
-        </button>
-      </p>
-      <p id="counter">{state.count}</p>
-    </>
-
-    //   </div>
+    // //   <div id="app">
+    // //     {num.value}
+    // //     <Main2 />
     // <>
-    /* <input type="text" ref={input} />
-      <button type="button" onClick={() => clearTime(timeoutID)}>
-        Add to Local Storage
-      </button>
-      {initialValue} */
+    //   <h1>The (Final?) Counter</h1>
+    //   <p id="actions">
+    //     <button
+    //       onClick={() => {
+    //         dispatch({ type: "increment" })
+    //       }}
+    //     >
+    //       Increment
+    //     </button>
+    //     <button
+    //       onClick={() => {
+    //         dispatch({ type: "decrement" })
+    //       }}
+    //     >
+    //       Decrement
+    //     </button>
+    //     <button
+    //       onClick={() => {
+    //         dispatch({ type: "reset" })
+    //       }}
+    //     >
+    //       Reset
+    //     </button>
+    //   </p>
+    //   <p id="counter">{state.count}</p>
     // </>
+
+    // //   </div>
+    // // <>
+    // /* <input type="text" ref={input} />
+    //   <button type="button" onClick={() => clearTime(timeoutID)}>
+    //     Add to Local Storage
+    //   </button>
+    //   {initialValue} */
+    // // </>
+    <LoginForm />
   )
 }
 
