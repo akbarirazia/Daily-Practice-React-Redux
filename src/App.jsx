@@ -5,6 +5,7 @@ import Main2 from "./Main2"
 import useAddStorage from "./useAddStorage"
 import useLog from "./useLog"
 import LoginForm from "./LoginForm"
+import Counter from "./Counter"
 export function counterReducer(state, action) {
   if (action.type == "increment") {
     return { count: state.count + 1 }
@@ -81,7 +82,8 @@ function App() {
     //   </button>
     //   {initialValue} */
     // // </>
-    <LoginForm />
+    // <LoginForm />
+    <Counter />
   )
 }
 
