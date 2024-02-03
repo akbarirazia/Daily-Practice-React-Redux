@@ -1,3 +1,6 @@
+// Hi Razia,
+// If you are reading this from the future, today was an incredible day. God had me blessed and my exam went well. Don't fall off the track future Razia.
+
 import { useContext, useEffect, useReducer, useRef, useState } from "react"
 import { NumberContext } from "./NumContext"
 import "./index.css"
